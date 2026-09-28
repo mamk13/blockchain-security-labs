@@ -9,13 +9,14 @@ These are educational models. They are not audited production components, deploy
 | Lab | Question | Runtime |
 | --- | --- | --- |
 | [01 · Backing and replay](labs/01-backing-and-replay/README.md) | Can two valid mint requests consume the same deposit? | CPython 3.12.14; standard library only |
+| [02 · Upgrade intent](labs/02-upgrade-intent/README.md) | Does execution preserve the exact queued action? | CPython 3.12.14; standard library only |
 
 ```sh
 cd labs/01-backing-and-replay
 python3 -m unittest -v fee_guard_example test_replay
 ```
 
-The first lab passed all 14 local tests on September 28, 2026. See [validation](docs/VALIDATION.md) for the exact scope. A local pass is not a GitHub Actions result.
+September 28, 2026: Lab 01 passed 14 local tests; Lab 02 passed 12. See [validation](docs/VALIDATION.md) for the exact scope. A local pass is not a GitHub Actions result. The `Educational labs` workflow runs both suites without chain RPC, wallets or financial transactions; check the Actions tab for its actual status.
 
 ## Learn by changing a test
 

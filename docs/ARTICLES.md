@@ -1,5 +1,12 @@
 # Article index
 
+## The Upgrade Path Is Part of Your Security Boundary
+
+- Preliminary review of the September 22, 2026 Neutron incident, drafted September 28.
+- Medium publication pending; no URL invented.
+- Companion: [Lab 02](../labs/02-upgrade-intent/README.md), an independent educational model of action binding and delays.
+- Payload substitution is not established as the Neutron root cause. No chain-specific patch or exploit replay is claimed.
+
 ## One Deposit, Two Valid Requests: The Backing Invariant an Amount Check Cannot Prove
 
 - Type: educational review, originally prepared September 21, 2026.
