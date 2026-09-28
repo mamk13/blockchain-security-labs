@@ -1,0 +1,9 @@
+# Provenance
+
+Maintainer: Mohammad Khezer.
+
+The first lab comes from the September 2026 Blockchain Security Review educational artifact. It uses original synthetic examples, not copied deployed protocol code. The initial repository publication retains the artifact's three Python source files and adds navigation, exercises and a dated validation record.
+
+Claims about incident discoveries, independent exploit reproduction and production validation require their own evidence; maintenance of this repository alone does not establish them.
+
+Preserve source attribution and license notices when adding third-party material. Commit history records actual changes; test records distinguish local runs from hosted CI. The project has not yet adopted an open-source license.
