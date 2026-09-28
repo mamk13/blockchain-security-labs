@@ -4,7 +4,7 @@
 
 - Type: educational review, originally prepared September 21, 2026.
 - Companion: [Lab 01](../labs/01-backing-and-replay/README.md).
-- Medium publication URL: not yet supplied. No live article URL is claimed.
+- [Read the Medium article](https://mamk13.medium.com/one-deposit-two-valid-requests-the-backing-invariant-an-amount-check-cannot-prove-917230f79e10). Publication reported by the author on September 28, 2026.
 - Scope: fee arithmetic and source-event consumption; no historical exploit replay.
 
 ## Symbiosis Bitcoin Bridge: When a Valid Signature Carries an Invalid Amount
