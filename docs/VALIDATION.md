@@ -1,5 +1,17 @@
 # Validation record
 
+## October 6, 2026: Lab 03 publication rerun
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Lab 01: `cd labs/01-backing-and-replay && python3 -m unittest -v fee_guard_example test_replay`: **14 passed in 0.016s, exit 0**.
+- Lab 02: `cd labs/02-upgrade-intent && python3 -m unittest -v test_upgrade`: **12 passed in 0.001s, exit 0**.
+- Lab 03: `cd labs/03-sandbox-boundary && python3 -m unittest -v test_sandbox`: **10 passed in 0.000s (reported timer precision), exit 0**.
+- Original October 5 Lab 03 validation: **10 passed in 0.001s**, CPython 3.12.14. Its Python source is unchanged in this publication.
+- Lab 03 tests privileged dispatch, allowed writes, namespace rejection, unknown operations, mixed-batch rejection preserving state, and invalid input/value types.
+- No native sandbox escape, compiler execution, RPC call, wallet interaction, historical replay, or live transaction occurred. This is not an upstream patch.
+- The workflow now includes Lab 03. Hosted CI is a separate result, to be verified against the published commit.
+
 ## September 28, 2026: upgrade-intent extension
 
 - CPython 3.12.14, standard library only; isolated local execution.

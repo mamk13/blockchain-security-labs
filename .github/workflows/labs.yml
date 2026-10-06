@@ -23,3 +23,6 @@ jobs:
       - name: Upgrade intent
         working-directory: labs/02-upgrade-intent
         run: python -m unittest -v test_upgrade
+      - name: Sandbox boundary
+        working-directory: labs/03-sandbox-boundary
+        run: python -m unittest -v test_sandbox

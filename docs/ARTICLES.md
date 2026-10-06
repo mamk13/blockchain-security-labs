@@ -1,5 +1,12 @@
 # Article index
 
+## A Smart Contract Sandbox Is Only as Strong as Its Compiler Boundary
+
+- [Published Medium article](https://medium.com/@mamk13/a-smart-contract-sandbox-is-only-as-strong-as-its-compiler-boundary-e48ed3c01e61), supplied by the author October 5, 2026.
+- Disclosure review of CWA-2026-006, publicly disclosed September 28, 2026.
+- Companion: [Lab 03](../labs/03-sandbox-boundary/README.md), a synthetic capability-boundary model.
+- This model does not reproduce the Wasmer defect or replace the upstream patches.
+
 ## The Upgrade Path Is Part of Your Security Boundary
 
 - Preliminary review of the September 22, 2026 Neutron incident, drafted September 28.

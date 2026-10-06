@@ -7,3 +7,5 @@ The first lab comes from the September 2026 Blockchain Security Review education
 Claims about incident discoveries, independent exploit reproduction and production validation require their own evidence; maintenance of this repository alone does not establish them.
 
 Preserve source attribution and license notices when adding third-party material. Commit history records actual changes; test records distinguish local runs from hosted CI. The project has not yet adopted an open-source license.
+
+Lab 03 was prepared October 5, 2026 and prepared for publication October 6. It is an original synthetic model developed with AI assistance, inspired by the public CWA-2026-006 advisory. No Wasmer, wasmvm or wasmd code was copied, and no native escape was reproduced.
