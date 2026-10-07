@@ -5,7 +5,8 @@
 - [Published Medium article](https://medium.com/@mamk13/a-smart-contract-sandbox-is-only-as-strong-as-its-compiler-boundary-e48ed3c01e61), supplied by the author October 5, 2026.
 - Disclosure review of CWA-2026-006, publicly disclosed September 28, 2026.
 - Companion: [Lab 03](../labs/03-sandbox-boundary/README.md), a synthetic capability-boundary model.
-- This model does not reproduce the Wasmer defect or replace the upstream patches.
+- Operational exercise: [Lab 04](../labs/04-runtime-version-gate/README.md), a release-pair and runtime-parity gate.
+- These educational models do not reproduce the Wasmer defect or replace the upstream patches.
 
 ## The Upgrade Path Is Part of Your Security Boundary
 

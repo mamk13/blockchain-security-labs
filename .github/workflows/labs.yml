@@ -26,3 +26,6 @@ jobs:
       - name: Sandbox boundary
         working-directory: labs/03-sandbox-boundary
         run: python -m unittest -v test_sandbox
+      - name: Runtime version gate
+        working-directory: labs/04-runtime-version-gate
+        run: python -m unittest -v test_version_gate

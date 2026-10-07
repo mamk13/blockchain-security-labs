@@ -11,6 +11,7 @@ These are educational models. They are not audited production components, deploy
 | [01 · Backing and replay](labs/01-backing-and-replay/README.md) | Can two valid mint requests consume the same deposit? | CPython 3.12.14; standard library only |
 | [02 · Upgrade intent](labs/02-upgrade-intent/README.md) | Does execution preserve the exact queued action? | CPython 3.12.14; standard library only |
 | [03 · Sandbox boundary](labs/03-sandbox-boundary/README.md) | Can guest-controlled execution reach a host-privileged effect? | CPython 3.12.14; standard library only |
+| [04 · Runtime version gate](labs/04-runtime-version-gate/README.md) | Does deployment prove the correct patched pair is actually loaded? | CPython 3.12.14; standard library only |
 
 
 ```sh
@@ -18,7 +19,7 @@ cd labs/01-backing-and-replay
 python3 -m unittest -v fee_guard_example test_replay
 ```
 
-September 28, 2026: Lab 01 passed 14 local tests; Lab 02 passed 12. See [validation](docs/VALIDATION.md) for the exact scope. A local pass is not a GitHub Actions result. The `Educational labs` workflow runs all published suites without chain RPC, wallets or financial transactions; check the Actions tab for its actual status.
+See [validation](docs/VALIDATION.md) for dated commands, results, and limits. A local pass is not a GitHub Actions result. The `Educational labs` workflow runs all published suites without chain RPC, wallets or financial transactions; check the Actions tab for its actual status.
 
 ## Learn by changing a test
 

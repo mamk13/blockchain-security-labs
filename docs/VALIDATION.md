@@ -1,5 +1,19 @@
 # Validation record
 
+## October 7, 2026: Lab 04 publication rerun
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Lab 01: `cd labs/01-backing-and-replay && python3 -m unittest -v fee_guard_example test_replay`: **14 passed in 0.023s, exit 0**.
+- Lab 02: `cd labs/02-upgrade-intent && python3 -m unittest -v test_upgrade`: **12 passed in 0.010s, exit 0**.
+- Lab 03: `cd labs/03-sandbox-boundary && python3 -m unittest -v test_sandbox`: **10 passed in 0.001s, exit 0**.
+- Lab 04: `cd labs/04-runtime-version-gate && python3 -m unittest -v test_version_gate`: **10 passed in 0.002s, exit 0**.
+- Original October 5 Lab 04 validation: **10 passed in 0.001s**, CPython 3.12.14. The Python source is unchanged in this publication.
+- Lab 04 covers all four patched advisory pairs, all four immediately affected pairs, declared-versus-loaded parity, wrong and unknown release lines, malformed versions, and the deliberately unsafe global-minimum comparison.
+- The release-pair matrix was rechecked against the official CWA-2026-006 advisory at publication time.
+- No Wasmer, wasmvm or wasmd compiler execution, binary attestation, native sandbox escape, RPC call, wallet interaction, historical exploit replay or live transaction occurred. This is an educational deployment-policy model, not an updater or upstream patch.
+- The workflow includes Lab 04. Hosted CI is a separate result to verify against the exact published commit.
+
 ## October 6, 2026: Lab 03 publication rerun
 
 CPython 3.12.14; standard library only; isolated local execution.
