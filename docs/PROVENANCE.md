@@ -11,3 +11,5 @@ Preserve source attribution and license notices when adding third-party material
 Lab 03 was prepared October 5, 2026 and prepared for publication October 6. It is an original synthetic model developed with AI assistance, inspired by the public CWA-2026-006 advisory. No Wasmer, wasmvm or wasmd code was copied, and no native escape was reproduced.
 
 Lab 04 was prepared October 5, 2026 and published October 7, 2026. It is an original synthetic deployment-policy model developed with AI assistance from the public CWA-2026-006 advisory. No Wasmer, wasmvm or wasmd source was copied. The lab is not a production attestation service, updater, upstream patch or exploit replay.
+
+Lab 05 was prepared October 8, 2026. It is an original synthetic oracle-consumer model developed with AI assistance from Chainlink's public EVM Data Feeds documentation. No Chainlink contract or deployed protocol source was copied. The lab is not a production feed adapter, oracle recommendation, incident reconstruction or deployed patch.

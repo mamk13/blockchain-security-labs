@@ -1,5 +1,15 @@
 # Validation record
 
+## October 8, 2026: Lab 05 preparation
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Command: `cd labs/05-oracle-age-skew-units && python3 -m unittest -v test_oracle_guard`.
+- Result: **12 passed in 0.001s, exit 0**.
+- Full pre-publication rerun: Lab 01 **14 passed in 0.021s**; Lab 02 **12 passed in 0.001s**; Lab 03 **10 passed in 0.001s**; Lab 04 **10 passed in 0.001s**; Lab 05 **12 passed in 0.001s**. Every command exited 0.
+- Scope: synthetic observations only; no RPC, wallet, live feed, network request or transaction.
+- Limit: the model tests declared age, pairwise skew and decimal policies. It does not establish economic correctness, feed suitability or production safety.
+
 ## October 7, 2026: Lab 04 publication rerun
 
 CPython 3.12.14; standard library only; isolated local execution.

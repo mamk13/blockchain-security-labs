@@ -12,6 +12,7 @@ These are educational models. They are not audited production components, deploy
 | [02 · Upgrade intent](labs/02-upgrade-intent/README.md) | Does execution preserve the exact queued action? | CPython 3.12.14; standard library only |
 | [03 · Sandbox boundary](labs/03-sandbox-boundary/README.md) | Can guest-controlled execution reach a host-privileged effect? | CPython 3.12.14; standard library only |
 | [04 · Runtime version gate](labs/04-runtime-version-gate/README.md) | Does deployment prove the correct patched pair is actually loaded? | CPython 3.12.14; standard library only |
+| [05 · Oracle age, skew and units](labs/05-oracle-age-skew-units/README.md) | Are derived-price inputs fresh, synchronized and normalized? | CPython 3.12.14; standard library only |
 
 
 ```sh

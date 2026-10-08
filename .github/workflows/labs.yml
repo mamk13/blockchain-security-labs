@@ -29,3 +29,6 @@ jobs:
       - name: Runtime version gate
         working-directory: labs/04-runtime-version-gate
         run: python -m unittest -v test_version_gate
+      - name: Oracle age, skew and units
+        working-directory: labs/05-oracle-age-skew-units
+        run: python -m unittest -v test_oracle_guard

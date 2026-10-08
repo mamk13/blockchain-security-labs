@@ -1,5 +1,12 @@
 # Article index
 
+## Fresh Is Not Synchronized: The Oracle Checks a Timestamp Alone Cannot Prove
+
+- Educational review prepared October 8, 2026; Medium publication pending and no URL invented.
+- Companion: [Lab 05](../labs/05-oracle-age-skew-units/README.md), a synthetic age, cross-feed skew and decimal-normalization model.
+- Primary technical reference: [Chainlink's EVM Data Feeds guide](https://docs.chain.link/data-feeds/using-data-feeds).
+- This lab does not inspect a live feed or reproduce an incident. Its thresholds are illustrative application policy.
+
 ## A Smart Contract Sandbox Is Only as Strong as Its Compiler Boundary
 
 - [Published Medium article](https://medium.com/@mamk13/a-smart-contract-sandbox-is-only-as-strong-as-its-compiler-boundary-e48ed3c01e61), supplied by the author October 5, 2026.
