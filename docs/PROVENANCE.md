@@ -13,3 +13,5 @@ Lab 03 was prepared October 5, 2026 and prepared for publication October 6. It i
 Lab 04 was prepared October 5, 2026 and published October 7, 2026. It is an original synthetic deployment-policy model developed with AI assistance from the public CWA-2026-006 advisory. No Wasmer, wasmvm or wasmd source was copied. The lab is not a production attestation service, updater, upstream patch or exploit replay.
 
 Lab 05 was prepared October 8, 2026. It is an original synthetic oracle-consumer model developed with AI assistance from Chainlink's public EVM Data Feeds documentation. No Chainlink contract or deployed protocol source was copied. The lab is not a production feed adapter, oracle recommendation, incident reconstruction or deployed patch.
+
+Lab 06 was prepared October 8, 2026. It is an original synthetic share-accounting model developed with AI assistance from EIP-4626 and OpenZeppelin's public ERC-4626 guide. No OpenZeppelin contract or deployed vault source was copied. The lab is not an ERC-4626 implementation, audited vault, deployed patch or exploit replay.

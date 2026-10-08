@@ -6,6 +6,7 @@
 - Companion: [Lab 05](../labs/05-oracle-age-skew-units/README.md), a synthetic age, cross-feed skew and decimal-normalization model.
 - Primary technical reference: [Chainlink's EVM Data Feeds guide](https://docs.chain.link/data-feeds/using-data-feeds).
 - This lab does not inspect a live feed or reproduce an incident. Its thresholds are illustrative application policy.
+- Related exercise: [Lab 06](../labs/06-share-accounting-rounding/README.md) covers distinct ERC-4626-style preview, rounding and empty-vault accounting invariants.
 
 ## A Smart Contract Sandbox Is Only as Strong as Its Compiler Boundary
 

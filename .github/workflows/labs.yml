@@ -32,3 +32,6 @@ jobs:
       - name: Oracle age, skew and units
         working-directory: labs/05-oracle-age-skew-units
         run: python -m unittest -v test_oracle_guard
+      - name: Share accounting and rounding
+        working-directory: labs/06-share-accounting-rounding
+        run: python -m unittest -v test_vault_rounding

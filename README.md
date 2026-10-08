@@ -13,6 +13,7 @@ These are educational models. They are not audited production components, deploy
 | [03 · Sandbox boundary](labs/03-sandbox-boundary/README.md) | Can guest-controlled execution reach a host-privileged effect? | CPython 3.12.14; standard library only |
 | [04 · Runtime version gate](labs/04-runtime-version-gate/README.md) | Does deployment prove the correct patched pair is actually loaded? | CPython 3.12.14; standard library only |
 | [05 · Oracle age, skew and units](labs/05-oracle-age-skew-units/README.md) | Are derived-price inputs fresh, synchronized and normalized? | CPython 3.12.14; standard library only |
+| [06 · Share accounting and rounding](labs/06-share-accounting-rounding/README.md) | Do previews, rounding and empty-vault accounting protect the caller? | CPython 3.12.14; standard library only |
 
 
 ```sh

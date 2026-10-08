@@ -1,5 +1,15 @@
 # Validation record
 
+## October 8, 2026: Lab 06 preparation
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Command: `cd labs/06-share-accounting-rounding && python3 -m unittest -v test_vault_rounding`.
+- Result: **14 passed in 0.001s, exit 0**.
+- Full pre-publication rerun: Lab 01 **14 passed in 0.017s**; Lab 02 **12 passed in 0.003s**; Lab 03 **10 passed in 0.001s**; Lab 04 **10 passed in 0.001s**; Lab 05 **12 passed in 0.001s**; Lab 06 **14 passed in 0.001s**. Every command exited 0.
+- Scope: synthetic integer accounting only; no Solidity compiler, token, RPC, wallet, network request or transaction.
+- Limit: the model omits many ERC-4626 and token behaviors and does not establish production compliance or safety.
+
 ## October 8, 2026: Lab 05 preparation
 
 CPython 3.12.14; standard library only; isolated local execution.
