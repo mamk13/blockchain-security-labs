@@ -2,7 +2,8 @@
 
 ## Fresh Is Not Synchronized: The Oracle Checks a Timestamp Alone Cannot Prove
 
-- Educational review prepared October 8, 2026; Medium publication pending and no URL invented.
+- [Read the Medium article](https://mamk13.medium.com/fresh-is-not-synchronized-the-oracle-checks-a-timestamp-alone-cannot-prove-c8513e30b328). Publication reported and URL supplied by the author October 9, 2026.
+- Educational review prepared October 8, 2026.
 - Companion: [Lab 05](../labs/05-oracle-age-skew-units/README.md), a synthetic age, cross-feed skew and decimal-normalization model.
 - Primary technical reference: [Chainlink's EVM Data Feeds guide](https://docs.chain.link/data-feeds/using-data-feeds).
 - This lab does not inspect a live feed or reproduce an incident. Its thresholds are illustrative application policy.

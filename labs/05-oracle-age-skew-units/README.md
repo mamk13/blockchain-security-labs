@@ -30,3 +30,7 @@ Chainlink's EVM guide exposes `decimals()` and `latestRoundData()`, whose respon
 Primary reference: [Using Data Feeds on EVM Chains](https://docs.chain.link/data-feeds/using-data-feeds).
 
 The lab does not model heartbeat/deviation configuration, phase transitions, L2 sequencer checks, market status, circuit breakers, fallback oracles, governance, or feed-address selection. Its `0..18` decimal limit is a deliberately narrow local policy, not a statement that all feeds use that range.
+
+## Companion article
+
+[Fresh Is Not Synchronized: The Oracle Checks a Timestamp Alone Cannot Prove](https://mamk13.medium.com/fresh-is-not-synchronized-the-oracle-checks-a-timestamp-alone-cannot-prove-c8513e30b328) — publication reported and URL supplied by the author October 9, 2026.
