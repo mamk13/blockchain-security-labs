@@ -1,5 +1,31 @@
 # Article index
 
+## Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission
+
+- Evergreen educational review prepared October 12, 2026; Medium publication pending.
+- Companion [Lab 07](../labs/07-revocable-authorization/README.md) tests changing authorization state, rejection integrity and recovery.
+- Separate practical exercise: [Lab 08](../labs/08-initialization-boundary/README.md), initialization before instance publication.
+- ERC-1271 and OpenZeppelin documentation are conceptual references; these Python models implement neither standard nor library.
+- No incident, affected deployment, loss, exploit replay or production remediation is claimed.
+
+
+## Fresh Is Not Synchronized: The Oracle Checks a Timestamp Alone Cannot Prove
+
+- [Read the Medium article](https://mamk13.medium.com/fresh-is-not-synchronized-the-oracle-checks-a-timestamp-alone-cannot-prove-c8513e30b328). Publication reported and URL supplied by the author October 9, 2026.
+- Educational review prepared October 8, 2026.
+- Companion: [Lab 05](../labs/05-oracle-age-skew-units/README.md), a synthetic age, cross-feed skew and decimal-normalization model.
+- Primary technical reference: [Chainlink's EVM Data Feeds guide](https://docs.chain.link/data-feeds/using-data-feeds).
+- This lab does not inspect a live feed or reproduce an incident. Its thresholds are illustrative application policy.
+- Related exercise: [Lab 06](../labs/06-share-accounting-rounding/README.md) covers distinct ERC-4626-style preview, rounding and empty-vault accounting invariants.
+
+## A Smart Contract Sandbox Is Only as Strong as Its Compiler Boundary
+
+- [Published Medium article](https://medium.com/@mamk13/a-smart-contract-sandbox-is-only-as-strong-as-its-compiler-boundary-e48ed3c01e61), supplied by the author October 5, 2026.
+- Disclosure review of CWA-2026-006, publicly disclosed September 28, 2026.
+- Companion: [Lab 03](../labs/03-sandbox-boundary/README.md), a synthetic capability-boundary model.
+- Operational exercise: [Lab 04](../labs/04-runtime-version-gate/README.md), a release-pair and runtime-parity gate.
+- These educational models do not reproduce the Wasmer defect or replace the upstream patches.
+
 ## The Upgrade Path Is Part of Your Security Boundary
 
 - Preliminary review of the September 22, 2026 Neutron incident, drafted September 28.
@@ -23,3 +49,4 @@
 ## Technical reference
 
 [EIP-712](https://eips.ethereum.org/EIPS/eip-712) specifies typed-data signing and leaves replay protection to applications. This Python lab does not implement EIP-712.
+

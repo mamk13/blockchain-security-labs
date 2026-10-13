@@ -1,5 +1,60 @@
 # Validation record
 
+## October 12, 2026: Labs 07 and 08
+
+CPython 3.12.14; standard library only. New suites: `cd labs/07-revocable-authorization && python3 -m unittest -v test_authorization` and `cd labs/08-initialization-boundary && python3 -m unittest -v test_initialization`: **12 passed in 0.001s each, exit 0**.
+
+All prior published suites rerun from remote commit c2085a4f6fcaa52c43f1af7a84f152a5c90b51a6 using the commands in `.github/workflows/labs.yml`: Lab01 14 in 0.017s; Lab02 12 in 0.001s; Lab03 10 in 0.001s; Lab04 10 in 0.001s; Lab05 12 in 0.001s; Lab06 14 in 0.001s. All exited 0. Total **96 tests**, of which **24 are new**. Historical validation records below are preserved.
+
+Execution used synthetic local state only. No RPC, wallets, network in the suites, Solidity compiler, EVM execution, cryptographic signatures, live funds or exploit replay. Negative controls demonstrate the specified stale-authorization and uninitialized-instance failures. Hosted CI must be checked separately for the publication commit.
+
+
+## October 8, 2026: Lab 06 preparation
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Command: `cd labs/06-share-accounting-rounding && python3 -m unittest -v test_vault_rounding`.
+- Result: **14 passed in 0.001s, exit 0**.
+- Full pre-publication rerun: Lab 01 **14 passed in 0.017s**; Lab 02 **12 passed in 0.003s**; Lab 03 **10 passed in 0.001s**; Lab 04 **10 passed in 0.001s**; Lab 05 **12 passed in 0.001s**; Lab 06 **14 passed in 0.001s**. Every command exited 0.
+- Scope: synthetic integer accounting only; no Solidity compiler, token, RPC, wallet, network request or transaction.
+- Limit: the model omits many ERC-4626 and token behaviors and does not establish production compliance or safety.
+
+## October 8, 2026: Lab 05 preparation
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Command: `cd labs/05-oracle-age-skew-units && python3 -m unittest -v test_oracle_guard`.
+- Result: **12 passed in 0.001s, exit 0**.
+- Full pre-publication rerun: Lab 01 **14 passed in 0.021s**; Lab 02 **12 passed in 0.001s**; Lab 03 **10 passed in 0.001s**; Lab 04 **10 passed in 0.001s**; Lab 05 **12 passed in 0.001s**. Every command exited 0.
+- Scope: synthetic observations only; no RPC, wallet, live feed, network request or transaction.
+- Limit: the model tests declared age, pairwise skew and decimal policies. It does not establish economic correctness, feed suitability or production safety.
+
+## October 7, 2026: Lab 04 publication rerun
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Lab 01: `cd labs/01-backing-and-replay && python3 -m unittest -v fee_guard_example test_replay`: **14 passed in 0.023s, exit 0**.
+- Lab 02: `cd labs/02-upgrade-intent && python3 -m unittest -v test_upgrade`: **12 passed in 0.010s, exit 0**.
+- Lab 03: `cd labs/03-sandbox-boundary && python3 -m unittest -v test_sandbox`: **10 passed in 0.001s, exit 0**.
+- Lab 04: `cd labs/04-runtime-version-gate && python3 -m unittest -v test_version_gate`: **10 passed in 0.002s, exit 0**.
+- Original October 5 Lab 04 validation: **10 passed in 0.001s**, CPython 3.12.14. The Python source is unchanged in this publication.
+- Lab 04 covers all four patched advisory pairs, all four immediately affected pairs, declared-versus-loaded parity, wrong and unknown release lines, malformed versions, and the deliberately unsafe global-minimum comparison.
+- The release-pair matrix was rechecked against the official CWA-2026-006 advisory at publication time.
+- No Wasmer, wasmvm or wasmd compiler execution, binary attestation, native sandbox escape, RPC call, wallet interaction, historical exploit replay or live transaction occurred. This is an educational deployment-policy model, not an updater or upstream patch.
+- The workflow includes Lab 04. Hosted CI is a separate result to verify against the exact published commit.
+
+## October 6, 2026: Lab 03 publication rerun
+
+CPython 3.12.14; standard library only; isolated local execution.
+
+- Lab 01: `cd labs/01-backing-and-replay && python3 -m unittest -v fee_guard_example test_replay`: **14 passed in 0.016s, exit 0**.
+- Lab 02: `cd labs/02-upgrade-intent && python3 -m unittest -v test_upgrade`: **12 passed in 0.001s, exit 0**.
+- Lab 03: `cd labs/03-sandbox-boundary && python3 -m unittest -v test_sandbox`: **10 passed in 0.000s (reported timer precision), exit 0**.
+- Original October 5 Lab 03 validation: **10 passed in 0.001s**, CPython 3.12.14. Its Python source is unchanged in this publication.
+- Lab 03 tests privileged dispatch, allowed writes, namespace rejection, unknown operations, mixed-batch rejection preserving state, and invalid input/value types.
+- No native sandbox escape, compiler execution, RPC call, wallet interaction, historical replay, or live transaction occurred. This is not an upstream patch.
+- The workflow now includes Lab 03. Hosted CI is a separate result, to be verified against the published commit.
+
 ## September 28, 2026: upgrade-intent extension
 
 - CPython 3.12.14, standard library only; isolated local execution.
@@ -27,3 +82,4 @@ This rerun does not establish signature validity, historical exploit reproductio
 ## Original record
 
 The September 21, 2026 artifact recorded 14 local passing tests in 0.017 seconds. The three Python files in this initial repository import retain those source bytes. Documentation and exercises were added for public navigation on September 28.
+

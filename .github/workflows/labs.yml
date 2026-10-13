@@ -23,3 +23,22 @@ jobs:
       - name: Upgrade intent
         working-directory: labs/02-upgrade-intent
         run: python -m unittest -v test_upgrade
+      - name: Sandbox boundary
+        working-directory: labs/03-sandbox-boundary
+        run: python -m unittest -v test_sandbox
+      - name: Runtime version gate
+        working-directory: labs/04-runtime-version-gate
+        run: python -m unittest -v test_version_gate
+      - name: Oracle age, skew and units
+        working-directory: labs/05-oracle-age-skew-units
+        run: python -m unittest -v test_oracle_guard
+      - name: Share accounting and rounding
+        working-directory: labs/06-share-accounting-rounding
+        run: python -m unittest -v test_vault_rounding
+      - name: Revocable authorization
+        working-directory: labs/07-revocable-authorization
+        run: python -m unittest -v test_authorization
+      - name: Initialization boundary
+        working-directory: labs/08-initialization-boundary
+        run: python -m unittest -v test_initialization
+

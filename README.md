@@ -10,13 +10,19 @@ These are educational models. They are not audited production components, deploy
 | --- | --- | --- |
 | [01 · Backing and replay](labs/01-backing-and-replay/README.md) | Can two valid mint requests consume the same deposit? | CPython 3.12.14; standard library only |
 | [02 · Upgrade intent](labs/02-upgrade-intent/README.md) | Does execution preserve the exact queued action? | CPython 3.12.14; standard library only |
+| [03 · Sandbox boundary](labs/03-sandbox-boundary/README.md) | Can guest-controlled execution reach a host-privileged effect? | CPython 3.12.14; standard library only |
+| [04 · Runtime version gate](labs/04-runtime-version-gate/README.md) | Does deployment prove the correct patched pair is actually loaded? | CPython 3.12.14; standard library only |
+| [05 · Oracle age, skew and units](labs/05-oracle-age-skew-units/README.md) | Are derived-price inputs fresh, synchronized and normalized? | CPython 3.12.14; standard library only |
+| [06 · Share accounting and rounding](labs/06-share-accounting-rounding/README.md) | Do previews, rounding and empty-vault accounting protect the caller? | CPython 3.12.14; standard library only |
+| [07 · Revocable authorization](labs/07-revocable-authorization/README.md) | Can cached approval outlive current wallet authority? | CPython 3.12.14; standard library only |
+| [08 · Initialization boundary](labs/08-initialization-boundary/README.md) | Is an instance fully initialized before it becomes available? | CPython 3.12.14; standard library only |
 
 ```sh
 cd labs/01-backing-and-replay
 python3 -m unittest -v fee_guard_example test_replay
 ```
 
-September 28, 2026: Lab 01 passed 14 local tests; Lab 02 passed 12. See [validation](docs/VALIDATION.md) for the exact scope. A local pass is not a GitHub Actions result. The `Educational labs` workflow runs both suites without chain RPC, wallets or financial transactions; check the Actions tab for its actual status.
+See [validation](docs/VALIDATION.md) for dated commands, results, and limits. A local pass is not a GitHub Actions result. The `Educational labs` workflow runs all published suites without chain RPC, wallets or financial transactions; check the Actions tab for its actual status.
 
 ## Learn by changing a test
 
@@ -35,3 +41,4 @@ Each published article should reference an exact repository commit. New lessons 
 Useful contributions include a failing regression test, a correction backed by primary evidence, or a clearer explanation of an assumption. Include your runtime, command, expected result and actual result. Use synthetic data and local execution; do not submit credentials or live attack instructions.
 
 See [provenance](docs/PROVENANCE.md) and [security scope](SECURITY.md). An open-source license has not yet been selected; public visibility alone does not grant unrestricted reuse rights.
+
