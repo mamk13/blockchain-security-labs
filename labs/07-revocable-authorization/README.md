@@ -36,5 +36,5 @@ Read [EXERCISE](EXERCISE.md) before [SOLUTION](SOLUTION.md).
 
 No ECDSA, EIP-712 encoding, magic-value decoding, gas, EVM rollback, reentrancy, chain reorganization, durable storage, cross-process atomicity or actual contract-wallet execution is implemented. Checks and settlement are sequential Python operations; the lab provides no concurrency guarantee. A real adapter must validate return data and failure modes and protect its settlement boundary.
 
-Companion article: **Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission**; Medium publication pending. No URL invented. Original synthetic code; no third-party source copied. Repository license remains unselected.
+Companion article: [Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission](https://mamk13.medium.com/valid-yesterday-revoked-today-why-cached-authorization-is-not-execution-permission-29d4030ac1f1), publication reported and URL supplied by the author; cross-link recorded October 13, 2026. Original synthetic code; no third-party source copied. Repository license remains unselected.
 

@@ -2,7 +2,8 @@
 
 ## Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission
 
-- Evergreen educational review prepared October 12, 2026; Medium publication pending.
+- [Read the Medium article](https://mamk13.medium.com/valid-yesterday-revoked-today-why-cached-authorization-is-not-execution-permission-29d4030ac1f1). Publication reported and URL supplied by the author; cross-link recorded October 13, 2026.
+- Evergreen educational review prepared October 12, 2026.
 - Companion [Lab 07](../labs/07-revocable-authorization/README.md) tests changing authorization state, rejection integrity and recovery.
 - Separate practical exercise: [Lab 08](../labs/08-initialization-boundary/README.md), initialization before instance publication.
 - ERC-1271 and OpenZeppelin documentation are conceptual references; these Python models implement neither standard nor library.
