@@ -41,4 +41,21 @@ jobs:
       - name: Initialization boundary
         working-directory: labs/08-initialization-boundary
         run: python -m unittest -v test_initialization
-
+      - name: Lab 09 - Authorization epochs
+        working-directory: labs/09-authorization-epochs
+        run: python -m unittest -v test_epochs
+      - name: Lab 10 - Domain-separated permits
+        working-directory: labs/10-domain-separated-permits
+        run: python -m unittest -v test_domains
+      - name: Lab 11 - Callback settlement ordering
+        working-directory: labs/11-callback-settlement
+        run: python -m unittest -v test_settlement
+      - name: Lab 12 - Payment liveness and failure isolation
+        working-directory: labs/12-payment-liveness
+        run: python -m unittest -v test_payments
+      - name: Lab 13 - Received-amount credit
+        working-directory: labs/13-received-amount-credit
+        run: python -m unittest -v test_deposits
+      - name: Lab 14 - Merkle claim binding and root rotation
+        working-directory: labs/14-merkle-claim-binding
+        run: python -m unittest -v test_claims

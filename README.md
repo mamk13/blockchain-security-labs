@@ -42,3 +42,15 @@ Useful contributions include a failing regression test, a correction backed by p
 
 See [provenance](docs/PROVENANCE.md) and [security scope](SECURITY.md). An open-source license has not yet been selected; public visibility alone does not grant unrestricted reuse rights.
 
+
+
+## Additional boundary exercises — October15,2026
+
+| Lab | Learning objective |
+|---|---|
+| [09 — Authorization epochs](labs/09-authorization-epochs/README.md) | Epoch invalidation must permanently exclude older generations, even when a new permit reuses a nonce. |
+| [10 — Domain-separated permits](labs/10-domain-separated-permits/README.md) | A grant for one chain, verifier and schema must not authorize another context. A correct domain still needs local replay consumption. |
+| [11 — Callback settlement ordering](labs/11-callback-settlement/README.md) | At a recipient callback, the same claim must no longer be payable. A propagated failure restores the entire modeled ledger. |
+| [12 — Payment liveness and failure isolation](labs/12-payment-liveness/README.md) | One rejecting recipient must not prevent another recipient from collecting an independent allocation. |
+| [13 — Received-amount credit](labs/13-received-amount-credit/README.md) | Deposit credit must equal the observed positive vault balance increase, subject to the depositor's minimum, under the supported token assumptions. |
+| [14 — Merkle claim binding and root rotation](labs/14-merkle-claim-binding/README.md) | The proven leaf must bind campaign, allocation index, recipient and amount; root rotation must preserve consumed indices within the campaign. |

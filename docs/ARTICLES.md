@@ -51,3 +51,14 @@
 
 [EIP-712](https://eips.ethereum.org/EIPS/eip-712) specifies typed-data signing and leaves replay protection to applications. This Python lab does not implement EIP-712.
 
+
+
+## October15,2026 — finished educational article handoffs
+
+Manual publication pending; no published URLs supplied for these new drafts.
+
+- **A Nonce Is Not a Boundary: Separating Replay, Cancellation and Domain Scope** — [Lab09](../labs/09-authorization-epochs/README.md) and [Lab10](../labs/10-domain-separated-permits/README.md).
+- **A Payment Can Be Safe to Repeat and Still Impossible to Finish** — [Lab11](../labs/11-callback-settlement/README.md) and [Lab12](../labs/12-payment-liveness/README.md).
+- **Prove the Recipient, Measure the Receipt: Two Boundaries in Token Distribution** — [Lab13](../labs/13-received-amount-credit/README.md) and [Lab14](../labs/14-merkle-claim-binding/README.md).
+
+All three are evergreen educational analyses, not reports of newly discovered incidents. Their Python models do not implement EIP-712, ERC-1271, EVM execution, SafeERC20 or OpenZeppelin MerkleProof. The first authorization lifecycle article above retains its author-supplied URL; a browser access restriction on October15 prevented independent live article-content verification.

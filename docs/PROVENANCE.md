@@ -18,3 +18,8 @@ Lab 06 was prepared October 8, 2026. It is an original synthetic share-accountin
 
 Labs 07 and 08 were developed October 12, 2026 as original synthetic Python models. Sources: ERC-1271 and OpenZeppelin's public SignatureChecker/Initializable documentation. No protocol or library code was copied. Lab 07 tests current authorization policy; Lab 08 tests initialized-instance registration. Neither is an EVM implementation, audited production component or exploit replay.
 
+
+
+## October15,2026 — Labs09–14
+
+Added six distinct educational exercises on epochs, authorization domains, callback ordering, payment liveness, received-amount credit and Merkle claim binding. Built on remote main a67ab76a84461239e16279a02de658b48eed117c; existing owner changes and source/test files preserved. Sources are references, not installed dependencies or copied implementations. Individual READMEs distinguish trusted fixtures, negative controls, guarantees and excluded behavior. No incident reconstruction, production patch, sole-authorship claim or live financial testing is asserted.

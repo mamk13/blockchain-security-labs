@@ -83,3 +83,27 @@ This rerun does not establish signature validity, historical exploit reproductio
 
 The September 21, 2026 artifact recorded 14 local passing tests in 0.017 seconds. The three Python files in this initial repository import retain those source bytes. Documentation and exercises were added for public navigation on September 28.
 
+
+
+## October15,2026 — isolated local validation
+
+CPython3.12.14; one subprocess per suite; standard library only; no RPC or transactions. Existing lab source/tests preserved.
+
+| Suite | Tests | Seconds | Exit |
+|---|---:|---:|---:|
+| 01-backing-and-replay | 14 | 0.018 | 0 |
+| 02-upgrade-intent | 12 | 0.001 | 0 |
+| 03-sandbox-boundary | 10 | 0.001 | 0 |
+| 04-runtime-version-gate | 10 | 0.001 | 0 |
+| 05-oracle-age-skew-units | 12 | 0.001 | 0 |
+| 06-share-accounting-rounding | 14 | 0.000 | 0 |
+| 07-revocable-authorization | 12 | 0.001 | 0 |
+| 08-initialization-boundary | 12 | 0.000 | 0 |
+| 09-authorization-epochs | 7 | 0.001 | 0 |
+| 10-domain-separated-permits | 7 | 0.000 | 0 |
+| 11-callback-settlement | 6 | 0.001 | 0 |
+| 12-payment-liveness | 6 | 0.000 | 0 |
+| 13-received-amount-credit | 8 | 0.000 | 0 |
+| 14-merkle-claim-binding | 7 | 0.001 | 0 |
+
+Total: 137 passed; 41 in six new suites. These are local outcomes; hosted CI must be checked for the exact publication commit on [Actions](https://github.com/mamk13/blockchain-security-labs/actions/workflows/labs.yml). Historical validation above remains historical.
