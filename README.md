@@ -54,3 +54,12 @@ See [provenance](docs/PROVENANCE.md) and [security scope](SECURITY.md). An open-
 | [12 — Payment liveness and failure isolation](labs/12-payment-liveness/README.md) | One rejecting recipient must not prevent another recipient from collecting an independent allocation. |
 | [13 — Received-amount credit](labs/13-received-amount-credit/README.md) | Deposit credit must equal the observed positive vault balance increase, subject to the depositor's minimum, under the supported token assumptions. |
 | [14 — Merkle claim binding and root rotation](labs/14-merkle-claim-binding/README.md) | The proven leaf must bind campaign, allocation index, recipient and amount; root rotation must preserve consumed indices within the campaign. |
+
+## Execution and upgrade boundaries — October19,2026
+
+| Lab | Learning objective |
+|---|---|
+| [15 — Transient frame lifetime](labs/15-transient-frame-lifetime/README.md) | Reject nested entry while allowing a later independent call in the same transaction. Reverted frames restore their entry checkpoint, including descendant writes. |
+| [16 — Code and storage context](labs/16-code-storage-context/README.md) | A delegated write changes the selected execution owner's storage, not the implementation's storage; sender identity and static context are tracked separately. |
+| [17 — Packed layout compatibility](labs/17-packed-layout-compatibility/README.md) | Every preexisting flat unsigned field keeps its slot, bit offset and width across an accepted schema extension, using stable field names as identity. |
+| [18 — Atomic upgrade migration](labs/18-atomic-upgrade-migration/README.md) | On migration rejection the complete modeled proxy state is unchanged; on success the new implementation and version agree while owner, balances and total are preserved. |

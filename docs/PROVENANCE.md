@@ -1,5 +1,9 @@
 # Provenance
 
+## October 19, 2026 — Labs 15–18
+
+Four new synthetic Python exercises were developed on remote main `7aec1fadfcee43538de8dfa599e568138e1a2d97`: transient frame lifetime, code/storage context, packed-layout compatibility, and atomic upgrade migration. References: EIP-1153, EIP-7, EIP-1967, Solidity documentation and OpenZeppelin upgrade guidance. No upstream implementation was copied. Existing owner edits and Labs 01–14 source/tests were retained. Documentation separates the specification, tested model, negative controls and exclusions; this is not a claim of incident discovery, sole human authorship, a production patch or bytecode validation.
+
 Maintainer: Mohammad Khezer.
 
 The first lab comes from the September 2026 Blockchain Security Review educational artifact. It uses original synthetic examples, not copied deployed protocol code. The initial repository publication retains the artifact's three Python source files and adds navigation, exercises and a dated validation record.

@@ -59,3 +59,15 @@ jobs:
       - name: Lab 14 - Merkle claim binding and root rotation
         working-directory: labs/14-merkle-claim-binding
         run: python -m unittest -v test_claims
+      - name: Lab 15 - Transient frame lifetime
+        working-directory: labs/15-transient-frame-lifetime
+        run: python -m unittest -v test_transient
+      - name: Lab 16 - Code and storage context
+        working-directory: labs/16-code-storage-context
+        run: python -m unittest -v test_context
+      - name: Lab 17 - Packed layout compatibility
+        working-directory: labs/17-packed-layout-compatibility
+        run: python -m unittest -v test_layout
+      - name: Lab 18 - Atomic upgrade migration
+        working-directory: labs/18-atomic-upgrade-migration
+        run: python -m unittest -v test_migration

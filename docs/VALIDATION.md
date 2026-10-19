@@ -1,5 +1,13 @@
 # Validation record
 
+## October 19, 2026 — context and upgrade-state models
+
+CPython 3.12.14, standard library only, isolated local execution; no RPC, EVM execution or transactions. The exact 18 workflow test commands were run in separate subprocesses: **182 tests passed, exit 0 in every suite**. Existing Labs 01–14 contributed 137 tests; their source and tests were unchanged. New suites: Lab15 12 passed (0.002s), Lab16 11 passed (0.001s), Lab17 12 passed (0.001s), Lab18 10 passed (0.001s). These are local measured results; hosted CI is recorded separately against the exact remote commit in the editorial log.
+
+New commands, each from its corresponding lab directory: `python3 -m unittest -v test_transient`, `python3 -m unittest -v test_context`, `python3 -m unittest -v test_layout`, `python3 -m unittest -v test_migration`.
+
+Negative controls demonstrate sequential-call lock leakage, successful writes to the wrong storage owner, packed-field reinterpretation despite equal slot counts, and a failed migration leaving code/data versions inconsistent. A limitation test explicitly demonstrates that external Python callback effects are not rolled back by a snapshot of the modeled proxy ledger. These tests do not establish deployed contract safety or historical incident reproduction.
+
 ## October 12, 2026: Labs 07 and 08
 
 CPython 3.12.14; standard library only. New suites: `cd labs/07-revocable-authorization && python3 -m unittest -v test_authorization` and `cd labs/08-initialization-boundary && python3 -m unittest -v test_initialization`: **12 passed in 0.001s each, exit 0**.

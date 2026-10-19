@@ -1,5 +1,14 @@
 # Article index
 
+## October 19, 2026 — execution context and upgrade state
+
+Two evergreen educational articles are prepared for manual Medium publication; no publication URL is claimed:
+
+- **The Code Ran. Whose State Changed?** — [Lab15](../labs/15-transient-frame-lifetime/README.md) and [Lab16](../labs/16-code-storage-context/README.md), distinguishing code identity, storage ownership and transient-state lifetime.
+- **An Upgrade Can Succeed While the State Becomes Wrong** — [Lab17](../labs/17-packed-layout-compatibility/README.md) and [Lab18](../labs/18-atomic-upgrade-migration/README.md), distinguishing layout compatibility, transition atomicity and semantic postconditions.
+
+These are educational models, not EVM implementations or incident replays. The finished article files are delivered separately for author review and manual publication.
+
 ## Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission
 
 - [Read the Medium article](https://mamk13.medium.com/valid-yesterday-revoked-today-why-cached-authorization-is-not-execution-permission-29d4030ac1f1). Publication reported and URL supplied by the author; cross-link recorded October 13, 2026.
