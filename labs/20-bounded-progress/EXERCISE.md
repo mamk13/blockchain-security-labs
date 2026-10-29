@@ -1,0 +1,1 @@
+Predict the negative-control result before running the tests. Add a boundary regression that distinguishes temporary rejection from a successful retry. Explain which trusted input or external side effect would invalidate this model's guarantee.

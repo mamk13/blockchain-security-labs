@@ -1,0 +1,1 @@
+Reject an orphan before consuming its replay key; accept canonical reinclusion only after finality eligibility. Test unchanged credits and consumption after rejection. A trusted height without a matching canonical hash is insufficient. The fixture is not a consensus proof.

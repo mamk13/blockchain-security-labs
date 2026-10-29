@@ -115,3 +115,14 @@ CPython3.12.14; one subprocess per suite; standard library only; no RPC or trans
 | 14-merkle-claim-binding | 7 | 0.001 | 0 |
 
 Total: 137 passed; 41 in six new suites. These are local outcomes; hosted CI must be checked for the exact publication commit on [Actions](https://github.com/mamk13/blockchain-security-labs/actions/workflows/labs.yml). Historical validation above remains historical.
+
+## October 29, 2026 — Labs 19–20 publication validation
+
+Recovered the original October 26 educational models, without changing model/test bytes. CPython 3.12.14; each suite in its own process:
+
+```
+python3 -m unittest discover -s labs/19-canonical-finality -v
+python3 -m unittest discover -s labs/20-bounded-progress -v
+```
+
+Eight tests passed per suite (16 total); finality 0.000s, bounded progress 0.001s, both exit 0. Historical October 26 results remain separate. Existing 18 suites were not rerun locally in this publication step; hosted workflow includes them. No consensus implementation, receipt verification, EVM execution, gas measurement, external callbacks, RPC or live transaction was performed. No incident replay or production patch is claimed.

@@ -71,3 +71,9 @@ jobs:
       - name: Lab 18 - Atomic upgrade migration
         working-directory: labs/18-atomic-upgrade-migration
         run: python -m unittest -v test_migration
+      - name: Lab 19 - Canonical finality
+        working-directory: labs/19-canonical-finality
+        run: python -m unittest -v test_model
+      - name: Lab 20 - Bounded progress
+        working-directory: labs/20-bounded-progress
+        run: python -m unittest -v test_model

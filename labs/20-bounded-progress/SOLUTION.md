@@ -1,0 +1,1 @@
+Stage the chunk subtotal, then commit cursor and total together. A failed chunk leaves both at the previous checkpoint. Bounded work alone cannot handle a permanently failing job; recovery must preserve the outstanding obligation.

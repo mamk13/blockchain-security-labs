@@ -63,3 +63,10 @@ See [provenance](docs/PROVENANCE.md) and [security scope](SECURITY.md). An open-
 | [16 — Code and storage context](labs/16-code-storage-context/README.md) | A delegated write changes the selected execution owner's storage, not the implementation's storage; sender identity and static context are tracked separately. |
 | [17 — Packed layout compatibility](labs/17-packed-layout-compatibility/README.md) | Every preexisting flat unsigned field keeps its slot, bit offset and width across an accepted schema extension, using stable field names as identity. |
 | [18 — Atomic upgrade migration](labs/18-atomic-upgrade-migration/README.md) | On migration rejection the complete modeled proxy state is unchanged; on success the new implementation and version agree while owner, balances and total are preserved. |
+
+## Event acceptance and bounded progress — October 29, 2026
+
+- [19 — Canonical finality](labs/19-canonical-finality/README.md): distinguish observed events from trusted canonical/finalized eligibility before consuming replay keys.
+- [20 — Bounded progress](labs/20-bounded-progress/README.md): bounded work and atomic prefix checkpoints; permanent poison jobs remain an explicit limitation.
+
+These two models were prepared October 26 and first published October 29; do not count the rerun as two additional labs.
