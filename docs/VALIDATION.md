@@ -1,5 +1,18 @@
 # Validation record
 
+## November 2, 2026 — new Labs21–24
+
+CPython3.12.14; standard library only; isolated local process per suite. From repository root, run `python3 -m unittest discover -s labs/<directory> -v`.
+
+| Directory | Tests | Seconds | Exit |
+| --- | ---: | ---: | ---: |
+| 21-execution-price-bounds | 10 | 0.002 | 0 |
+| 22-rate-limit-envelope | 10 | 0.001 | 0 |
+| 23-token-return-boundary | 10 | 0.001 | 0 |
+| 24-unambiguous-intent-encoding | 10 | 0.005 | 0 |
+
+Total40 local tests passed. Price suite includes847 small-domain cases; encoding suite includes1600 byte-pair roundtrips and uniqueness checks. Prior20 suites were not rerun locally in this step. Hosted workflow includes all24; its result must be verified at the actual commit. No live transactions, RPC, Solidity compilation, EVM execution or incident replay. Timing is an observation, not a benchmark.
+
 ## October 19, 2026 — context and upgrade-state models
 
 CPython 3.12.14, standard library only, isolated local execution; no RPC, EVM execution or transactions. The exact 18 workflow test commands were run in separate subprocesses: **182 tests passed, exit 0 in every suite**. Existing Labs 01–14 contributed 137 tests; their source and tests were unchanged. New suites: Lab15 12 passed (0.002s), Lab16 11 passed (0.001s), Lab17 12 passed (0.001s), Lab18 10 passed (0.001s). These are local measured results; hosted CI is recorded separately against the exact remote commit in the editorial log.
@@ -126,3 +139,4 @@ python3 -m unittest discover -s labs/20-bounded-progress -v
 ```
 
 Eight tests passed per suite (16 total); finality 0.000s, bounded progress 0.001s, both exit 0. Historical October 26 results remain separate. Existing 18 suites were not rerun locally in this publication step; hosted workflow includes them. No consensus implementation, receipt verification, EVM execution, gas measurement, external callbacks, RPC or live transaction was performed. No incident replay or production patch is claimed.
+

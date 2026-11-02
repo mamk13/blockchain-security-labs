@@ -77,3 +77,16 @@ jobs:
       - name: Lab 20 - Bounded progress
         working-directory: labs/20-bounded-progress
         run: python -m unittest -v test_model
+      - name: Lab 21 - Execution price bounds
+        working-directory: labs/21-execution-price-bounds
+        run: python -m unittest -v test_model
+      - name: Lab 22 - Rate-limit envelope
+        working-directory: labs/22-rate-limit-envelope
+        run: python -m unittest -v test_model
+      - name: Lab 23 - Token return boundary
+        working-directory: labs/23-token-return-boundary
+        run: python -m unittest -v test_model
+      - name: Lab 24 - Unambiguous intent encoding
+        working-directory: labs/24-unambiguous-intent-encoding
+        run: python -m unittest -v test_model
+

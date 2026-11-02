@@ -1,5 +1,9 @@
 # Provenance
 
+## November 2, 2026 — Labs21–24
+
+Four original synthetic models and tests prepared with AI assistance for this maintained collection, based on main3a39875de60e026b22280a7c92bb7d0d4e991e65. No upstream code copied. Sources: Uniswap v2 router source (conceptual bounds), RFC3290 AppendixA.4 (token buckets), ERC20/OpenZeppelin documentation (return semantics), Solidity ABI documentation/EIP712 (encoding and replay boundaries). Existing owner content and prior lab source/tests retained. No incident discovery, sole-human-authorship, EVM execution or production validation claim.
+
 ## October 19, 2026 — Labs 15–18
 
 Four new synthetic Python exercises were developed on remote main `7aec1fadfcee43538de8dfa599e568138e1a2d97`: transient frame lifetime, code/storage context, packed-layout compatibility, and atomic upgrade migration. References: EIP-1153, EIP-7, EIP-1967, Solidity documentation and OpenZeppelin upgrade guidance. No upstream implementation was copied. Existing owner edits and Labs 01–14 source/tests were retained. Documentation separates the specification, tested model, negative controls and exclusions; this is not a claim of incident discovery, sole human authorship, a production patch or bytecode validation.
@@ -27,3 +31,4 @@ Labs 07 and 08 were developed October 12, 2026 as original synthetic Python mode
 ## October15,2026 — Labs09–14
 
 Added six distinct educational exercises on epochs, authorization domains, callback ordering, payment liveness, received-amount credit and Merkle claim binding. Built on remote main a67ab76a84461239e16279a02de658b48eed117c; existing owner changes and source/test files preserved. Sources are references, not installed dependencies or copied implementations. Individual READMEs distinguish trusted fixtures, negative controls, guarantees and excluded behavior. No incident reconstruction, production patch, sole-authorship claim or live financial testing is asserted.
+

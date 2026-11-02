@@ -1,5 +1,14 @@
 # Article index
 
+## November 2, 2026 — acceptance boundaries
+
+Finished educational articles delivered for manual Medium publication; no published URL claimed:
+
+- **A Deadline Is Not a Price Limit—and a Rate Limit Is Not a Loss Limit** — Labs21/22: execution bounds and refill accounting.
+- **The Call Succeeded. Did the Intended Transfer Happen?** — Labs23/24: result semantics and unambiguous field encoding.
+
+AI-assisted educational text and original synthetic models, not incident reconstructions or production patches.
+
 ## October 19, 2026 — execution context and upgrade state
 
 Two evergreen educational articles are prepared for manual Medium publication; no publication URL is claimed:
@@ -12,6 +21,7 @@ These are educational models, not EVM implementations or incident replays. The f
 ## Valid Yesterday, Revoked Today: Why Cached Authorization Is Not Execution Permission
 
 - [Read the Medium article](https://mamk13.medium.com/valid-yesterday-revoked-today-why-cached-authorization-is-not-execution-permission-29d4030ac1f1). Publication reported and URL supplied by the author; cross-link recorded October 13, 2026.
+- Live public title, Mohammad Khezer byline, article body and displayed October13,2026 publication date verified November2,2026. This is an existing article, not a new November completion.
 - Evergreen educational review prepared October 12, 2026.
 - Companion [Lab 07](../labs/07-revocable-authorization/README.md) tests changing authorization state, rejection integrity and recovery.
 - Separate practical exercise: [Lab 08](../labs/08-initialization-boundary/README.md), initialization before instance publication.
@@ -71,3 +81,4 @@ Manual publication pending; no published URLs supplied for these new drafts.
 - **Prove the Recipient, Measure the Receipt: Two Boundaries in Token Distribution** — [Lab13](../labs/13-received-amount-credit/README.md) and [Lab14](../labs/14-merkle-claim-binding/README.md).
 
 All three are evergreen educational analyses, not reports of newly discovered incidents. Their Python models do not implement EIP-712, ERC-1271, EVM execution, SafeERC20 or OpenZeppelin MerkleProof. The first authorization lifecycle article above retains its author-supplied URL; a browser access restriction on October15 prevented independent live article-content verification.
+

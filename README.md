@@ -70,3 +70,13 @@ See [provenance](docs/PROVENANCE.md) and [security scope](SECURITY.md). An open-
 - [20 — Bounded progress](labs/20-bounded-progress/README.md): bounded work and atomic prefix checkpoints; permanent poison jobs remain an explicit limitation.
 
 These two models were prepared October 26 and first published October 29; do not count the rerun as two additional labs.
+
+## Acceptance boundaries — November 2, 2026
+
+| Lab | Distinct learning objective |
+| --- | --- |
+| [21 — Execution price bounds](labs/21-execution-price-bounds/README.md) | Deadline and caller minimum protect different dimensions; rejected trades preserve the selected ledgers. |
+| [22 — Rate-limit envelope](labs/22-rate-limit-envelope/README.md) | Refill credit and checkpoint time commit together; bursts differ from rolling-window limits. |
+| [23 — Token return boundary](labs/23-token-return-boundary/README.md) | Call success, accepted return data and economic receipt are distinct claims. |
+| [24 — Unambiguous intent encoding](labs/24-unambiguous-intent-encoding/README.md) | Preserve dynamic-field boundaries before hashing; encoding does not replace replay policy. |
+
