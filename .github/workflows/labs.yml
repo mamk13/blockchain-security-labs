@@ -90,3 +90,15 @@ jobs:
         working-directory: labs/24-unambiguous-intent-encoding
         run: python -m unittest -v test_model
 
+      - name: Allowance update race
+        working-directory: labs/25-allowance-update-race
+        run: python -m unittest -v test_model
+      - name: Monotone nonce bitmap invalidation
+        working-directory: labs/26-nonce-bitmap-invalidation
+        run: python -m unittest -v test_model
+      - name: Timelock readiness snapshots
+        working-directory: labs/27-timelock-ready-snapshot
+        run: python -m unittest -v test_model
+      - name: Call gas forwarding bound
+        working-directory: labs/28-call-gas-forwarding-bound
+        run: python -m unittest -v test_model

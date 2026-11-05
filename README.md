@@ -80,3 +80,10 @@ These two models were prepared October 26 and first published October 29; do not
 | [23 — Token return boundary](labs/23-token-return-boundary/README.md) | Call success, accepted return data and economic receipt are distinct claims. |
 | [24 — Unambiguous intent encoding](labs/24-unambiguous-intent-encoding/README.md) | Preserve dynamic-field boundaries before hashing; encoding does not replace replay policy. |
 
+
+## State transitions and resource bounds — November 5, 2026
+
+- [Allowance update race](labs/25-allowance-update-race/README.md): A stale allowance replacement must not silently create a fresh spending budget after an intervening spend.
+- [Monotone nonce bitmap invalidation](labs/26-nonce-bitmap-invalidation/README.md): Invalidating a nonce repeatedly must never make it usable again; neighboring words and owners remain independent.
+- [Timelock readiness snapshots](labs/27-timelock-ready-snapshot/README.md): Changing the delay for future operations must not retroactively accelerate an already scheduled operation.
+- [Call gas forwarding bound](labs/28-call-gas-forwarding-bound/README.md): A requested child gas budget is not a delivered budget; check the capped allocation against a required minimum before recording success.
