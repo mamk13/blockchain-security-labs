@@ -1,0 +1,3 @@
+# November 9 validation
+
+CPython 3.12.14. Ran `python3 -m unittest -v test_model` independently in labs 29–32. All four processes exited 0: 8 tests each (32 total), durations 0.001/0.000/0.006/0.001 seconds. Lab29 enumerates 121 ordered bundles; Lab31 checks 1,296 value/allocation combinations; Lab32 checks all eight outcome combinations. Tests are local, synthetic and deterministic. No EVM, Solidity compiler, actual signatures, production RPC, exploit replay or live transaction. Existing suites not rerun locally; hosted CI is separate. AI-assisted creation and review; no claimed human-only authorship. Prior validation records preserved.

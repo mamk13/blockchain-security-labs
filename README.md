@@ -87,3 +87,10 @@ These two models were prepared October 26 and first published October 29; do not
 - [Monotone nonce bitmap invalidation](labs/26-nonce-bitmap-invalidation/README.md): Invalidating a nonce repeatedly must never make it usable again; neighboring words and owners remain independent.
 - [Timelock readiness snapshots](labs/27-timelock-ready-snapshot/README.md): Changing the delay for future operations must not retroactively accelerate an already scheduled operation.
 - [Call gas forwarding bound](labs/28-call-gas-forwarding-bound/README.md): A requested child gas budget is not a delivered budget; check the capped allocation against a required minimum before recording success.
+
+## Quorum and batch accounting — November 9, 2026
+
+- [Distinct signer quorum](labs/29-distinct-quorum/README.md): An accepted bundle contains no repeated signer identity, every attestation matches the intended digest, and its distinct member count reaches the configured threshold.
+- [Weighted quorum configuration](labs/30-weighted-config/README.md): Every accepted configuration has positive uint64 weights, a positive reachable threshold and a total weight within uint64. Rejection preserves the previous entire configuration.
+- [Batch value budget](labs/31-batch-value-budget/README.md): The total newly credited allocation never exceeds this call's incoming value. Rejected batches leave both modeled ledgers unchanged.
+- [Refund ownership after partial failure](labs/32-refund-ownership/README.md): Each payer's new refund equals incoming value minus successful allocated expenditure. Prior funds and other payers' refunds never become the latest payer's refund.

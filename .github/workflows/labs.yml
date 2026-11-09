@@ -102,3 +102,19 @@ jobs:
       - name: Call gas forwarding bound
         working-directory: labs/28-call-gas-forwarding-bound
         run: python -m unittest -v test_model
+
+      - name: Distinct signer quorum
+        working-directory: labs/29-distinct-quorum
+        run: python -m unittest -v test_model
+
+      - name: Weighted quorum configuration
+        working-directory: labs/30-weighted-config
+        run: python -m unittest -v test_model
+
+      - name: Batch value budget
+        working-directory: labs/31-batch-value-budget
+        run: python -m unittest -v test_model
+
+      - name: Refund ownership after partial failure
+        working-directory: labs/32-refund-ownership
+        run: python -m unittest -v test_model
