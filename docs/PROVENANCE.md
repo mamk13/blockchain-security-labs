@@ -32,3 +32,8 @@ Labs 07 and 08 were developed October 12, 2026 as original synthetic Python mode
 
 Added six distinct educational exercises on epochs, authorization domains, callback ordering, payment liveness, received-amount credit and Merkle claim binding. Built on remote main a67ab76a84461239e16279a02de658b48eed117c; existing owner changes and source/test files preserved. Sources are references, not installed dependencies or copied implementations. Individual READMEs distinguish trusted fixtures, negative controls, guarantees and excluded behavior. No incident reconstruction, production patch, sole-authorship claim or live financial testing is asserted.
 
+## November 12, 2026 — Labs33–36
+
+Four original synthetic models, tests and educational articles prepared with AI assistance on main 8d5d02ff383742c4bb0bac11a4f5b1a3341bd155. Primary references inspected: OpenZeppelin v5.4.0 Math, Checkpoints and Governor; Solidity 0.8.30 types; ERC-5805 and ERC-6372. No upstream implementation copied. OpenZeppelin reference code is MIT-licensed (Math credits Remco Bloemen and Uniswap); ERC texts have CC0 notices. Existing repository license status is unchanged. No sole-human-authorship, incident discovery, exploit replay, compiler/VM execution or production-validation claim. Existing owner content and all previous lab sources retained.
+
+

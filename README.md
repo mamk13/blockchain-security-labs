@@ -94,3 +94,11 @@ These two models were prepared October 26 and first published October 29; do not
 - [Weighted quorum configuration](labs/30-weighted-config/README.md): Every accepted configuration has positive uint64 weights, a positive reachable threshold and a total weight within uint64. Rejection preserves the previous entire configuration.
 - [Batch value budget](labs/31-batch-value-budget/README.md): The total newly credited allocation never exceeds this call's incoming value. Rejected batches leave both modeled ledgers unchanged.
 - [Refund ownership after partial failure](labs/32-refund-ownership/README.md): Each payer's new refund equals incoming value minus successful allocated expenditure. Prior funds and other payers' refunds never become the latest payer's refund.
+
+## Arithmetic and historical voting — November 12, 2026
+
+- [Full-precision multiply/divide](labs/33-full-precision-muldiv/README.md): For valid uint256 inputs and nonzero d, the accepted floor q satisfies q*d <= x*y < (q+1)*d. Ceiling has the corresponding upward bound. Reject if the selected result, not merely the intermediate product, exceeds uint256.
+- [Signed division semantics](labs/34-signed-division-semantics/README.md): The checked int256 quotient truncates toward zero; a=q*b+r, abs(r)<abs(b), and nonzero r has a's sign. Reject division by zero and MIN/-1. Mathematical floor is a separate explicitly selected policy.
+- [Closed checkpoint history](labs/35-checkpoint-history/README.md): For a closed timepoint t, lookup returns the last value whose checkpoint key is <=t, or zero before any checkpoint. Writes use a trusted nondecreasing clock, coalesce within a tick and cannot change already closed historical answers.
+- [Proposal-bound voting weights](labs/36-proposal-vote-snapshot/README.md): Every accepted vote reads the same proposal-selected historical timepoint, only after it is closed and using matching clock units. Each voter is counted once per proposal. Source/weight/tally failures leave both tally and voter markers unchanged.
+

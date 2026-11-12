@@ -82,3 +82,13 @@ Manual publication pending; no published URLs supplied for these new drafts.
 
 All three are evergreen educational analyses, not reports of newly discovered incidents. Their Python models do not implement EIP-712, ERC-1271, EVM execution, SafeERC20 or OpenZeppelin MerkleProof. The first authorization lifecycle article above retains its author-supplied URL; a browser access restriction on October15 prevented independent live article-content verification.
 
+## November 12, 2026 — arithmetic and historical voting
+
+Finished evergreen educational articles delivered for manual Medium publication. No new published URL claimed:
+
+- **The Answer Fits. The Intermediate Does Not.** — [Lab33](../labs/33-full-precision-muldiv/README.md) and [Lab34](../labs/34-signed-division-semantics/README.md): wide intermediates and signed division semantics.
+- **A Vote Needs a Timepoint, Not Just an Address** — [Lab35](../labs/35-checkpoint-history/README.md) and [Lab36](../labs/36-proposal-vote-snapshot/README.md): historical lookup and proposal-selected voting weights.
+
+AI-assisted original synthetic examples, not incident reconstructions or verified production implementations.
+
+

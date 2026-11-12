@@ -118,3 +118,20 @@ jobs:
       - name: Refund ownership after partial failure
         working-directory: labs/32-refund-ownership
         run: python -m unittest -v test_model
+
+      - name: Full-precision multiply/divide
+        working-directory: labs/33-full-precision-muldiv
+        run: python -m unittest -v test_model
+
+      - name: Signed division semantics
+        working-directory: labs/34-signed-division-semantics
+        run: python -m unittest -v test_model
+
+      - name: Closed checkpoint history
+        working-directory: labs/35-checkpoint-history
+        run: python -m unittest -v test_model
+
+      - name: Proposal-bound voting weights
+        working-directory: labs/36-proposal-vote-snapshot
+        run: python -m unittest -v test_model
+
